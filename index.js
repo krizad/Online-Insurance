@@ -17,7 +17,7 @@ const lineConfig = {
 const client = new line.Client(lineConfig);
 
 //public folder
-app.use(express.static('Frontend'));
+app.use(express.static('/Frontend'));
 app.use(express.json());
 
 app.get('/', (req, res) => {
