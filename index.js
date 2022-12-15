@@ -6,9 +6,12 @@ const dotenv = require('dotenv');
 const env = dotenv.config().parsed;
 const app = express();
 
+
+
+//vercel env
 const lineConfig = {
-    channelAccessToken: env.LINE_CHANNEL_ACCESS_TOKEN,
-    channelSecret: env.LINE_CHANNEL_SECRET
+    channelAccessToken: process.env.LINE_CHANNEL_ACCESS_TOKEN ?? env.LINE_CHANNEL_ACCESS_TOKEN,
+    channelSecret: process.env.LINE_CHANNEL_SECRET ?? env.LINE_CHANNEL_SECRET
 };
 
 const client = new line.Client(lineConfig);
@@ -66,6 +69,6 @@ const handleEvent = async (event) => {
 };
 
 
-app.listen(env.PORT, () => {
-    console.log(`Server running on port ${env.PORT}`);
+app.listen(process.env.PORT ?? env.PORT, () => {
+    console.log(`Server running on port ${process.env.PORT ?? env.PORT}`);
 });
