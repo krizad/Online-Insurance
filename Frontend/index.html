@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตอบแบบสอบถาม</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jquery UI -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- google font Kanit -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+
+<style>
+    body {
+        font-family: 'Kanit', sans-serif;
+    }
+
+    .container-sm {
+        margin-top: 10%;
+    }
+
+    .display-6 {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #button {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0%;
+        width: 100%;
+
+    }
+
+    .float {
+        position: fixed;
+        bottom: 20px;
+        right: 40px;
+
+    }
+
+    .float-items {
+
+        width: 60px;
+        height: 60px;
+        background-color: rgb(43, 241, 102);
+        color: transparent;
+        border-radius: 50px;
+        /* box-shadow: 2px 2px 3px #999; */
+        margin-top: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+</style>
+
+<body>
+    <div class="container-sm mt-3 mb-3">
+        <div class="row ">
+            <div class="col-md-12 text-center">
+                <img src="https://images.unsplash.com/photo-1670968981833-e028025124a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=391&q=80"
+                    alt="" srcset="">
+            </div>
+
+            <div class="col-md-12 text-center">
+                <img src="https://www.w3schools.com/bootstrap4/img_avatar1.png" class="rounded-circle"
+                    alt="Cinque Terre" width="304" height="236">
+            </div>
+
+            <div class="col-md-12 text-center">
+                <img src="https://images.unsplash.com/photo-1671030970314-1bb6e34d8dc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="" srcset="">
+            </div>
+
+            <div class="col-md-12 text-center">
+                <img src="https://images.unsplash.com/photo-1670870897001-e6ef25886ca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    srcset="">
+            </div>
+
+            <div class="col-md-12 text-center">
+                <img src="https://plus.unsplash.com/premium_photo-1669950187631-9c4776fae41a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    srcset="">
+            </div>
+
+            <div class="col-md-12 text-center">
+                <img src="https://images.unsplash.com/photo-1670979313867-1ca5b1657b35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    srcset="">
+            </div>
+        </div>
+
+
+
+        <!-- fixed bottom div -->
+        <div class="row d-flex">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary btn-lg" id="button">
+                    ลงทะเบียนให้เราติดต่อกลับ
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="display-6">
+            ลงทะเบียนให้เราติดต่อกลับ
+        </div>
+        <form class="row g-3 needs-validation" action="https://sheetdb.io/api/v1/wosq6sq5g5zm4" method="POST" id="form"
+            novalidate>
+            <div class="col-md-12">
+                <label for="nameInput" class="form-label">ชื่อ-นามสกุล<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="data[Name]" id="nameInput" value="" required>
+                <div class="valid-feedback">
+                </div>
+                <div class="invalid-feedback">
+                    กรุณากรอกชื่อ-นามสกุล
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <label for="phoneInput" class="form-label">เบอร์มือถือ<span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" name="data[Phone]" id="phoneInput" value="" required>
+                <div class="valid-feedback">
+                </div>
+                <div class="invalid-feedback">
+                    กรุณากรอกเบอร์มือถือ
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <label for="lineIdInput" class="form-label">ไอดีไลน์<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="data[LineID]" id="lineIdInput" value="" required>
+                <div class="valid-feedback">
+
+                </div>
+                <div class="invalid-feedback">
+                    กรุณากรอกไอดีไลน์
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <label for="interestInput" class="form-label">ความสนใจ</label>
+                <input type="text" class="form-control" name="data[Interest]" id="interestInput" value="" required>
+                <div class="valid-feedback">
+
+                </div>
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">ส่งข้อมูล</button>
+            </div>
+        </form>
+
+        <div class="float">
+            <div class="row" style="background-color:transparent;z-index: 100;" id="line">
+                <a href="#" class="float-items">
+                    <img src="./icon/line.png" width="60px" alt="Line">
+                </a>
+            </div>
+            <div class="row" style="background-color:transparent;z-index:99;" id="facebook">
+                <a href="#" class="float-items">
+                    <img src="./icon/facebook.png" width="60px" alt="Facebook">
+                </a>
+            </div>
+            <div class="row" style="background-color:transparent;z-index:99;" id="phone">
+                <a href="#" class="float-items">
+                    <img src="./icon/phone.png" width="60px" alt="Phone">
+                </a>
+            </div>
+            <div class="row" style="background-color:transparent;z-index:98;" id="chat">
+                <a class="float-items align-items-middle">
+                    <img src="./icon/chat.png" width="100%" alt="Chat">
+                    <img class="d-none" src="./icon/cancel.png" width="100%" alt="Cancel">
+                </a>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+<script src="./script.js"></script>
+<script src="./jqScript.js"></script>
+
+</html>
