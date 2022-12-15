@@ -68,7 +68,8 @@ const handleEvent = async (event) => {
     });
 };
 
-
-app.listen(process.env.PORT ?? env.PORT, () => {
+//vercel port
+const port = 4000
+app.listen(port, () => {
     console.log(`Server running on port ${process.env.PORT ?? env.PORT}`);
 });
