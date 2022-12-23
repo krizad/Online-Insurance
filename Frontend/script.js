@@ -68,7 +68,7 @@ $(document).ready(function () {
 
 
     $("#line").slideToggle();
-    $("#line").click(function () {
+    $("#line,#lineImg").click(function () {
         window.open("https://line.me/ti/p/nkqkHIKPgt", "_blank");
     });
 
