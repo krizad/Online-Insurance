@@ -67,17 +67,17 @@ $(document).ready(function () {
 
 
 
-    $("#line").slideToggle();
+    // $("#line").slideToggle();
     $("#line,#lineImg").click(function () {
         window.open("https://line.me/ti/p/nkqkHIKPgt", "_blank");
     });
 
-    $("#facebook").slideToggle();
+    // $("#facebook").slideToggle();
     $("#facebook").click(function () {
         window.open("https://www.facebook.com/djpingpong.inthason", "_blank");
     });
 
-    $("#phone").slideToggle();
+    // $("#phone").slideToggle();
     $("#phone").click(function () {
         window.open("tel:0979245362", "_blank");
     });

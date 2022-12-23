@@ -92,7 +92,7 @@
             <div class="col-12 text-center">
                 <img src="./img/img1.jpg" alt="" srcset="" style="width: 100%;">
             </div>
-            
+
             <div class="col-12 text-center">
                 <img src="./img/img2.jpg" alt="" srcset="" style="width: 100%;">
             </div>
@@ -127,7 +127,7 @@
                 <img src="./img/profile.jpg" alt="" srcset="" style="width: 100%;">
             </div>
             <div class="col-12 text-center">
-                <img src="./img/line.gif" alt="" srcset="" style="width: 100%;" id="lineImg">
+                <img src="./img/line.gif" alt="" srcset="" style="width: 100%;">
             </div>
         </div>
 
@@ -155,6 +155,17 @@
 
         <form class="row g-3 needs-validation" action="https://sheetdb.io/api/v1/wosq6sq5g5zm4" method="POST" id="form"
             novalidate>
+            <div class="col-12">
+                <label for="interestInput" class="form-label">ความสนใจ</label>
+                <select class="form-select" aria-label=".form-select-sm" id="interestInput">
+                    <option value="1">สนใจสมัครขายประกันรถออนไลน์</option>
+                    <option value="2">สนใจซื้อประกันรถในราคาสมาชิก</option>
+                </select>
+                <div class="valid-feedback">
+                </div>
+                <div class="invalid-feedback">
+                </div>
+            </div>
             <div class="col-12">
                 <label for="nameInput" class="form-label">ชื่อ-นามสกุล<span class="text-danger">*</span></label>
                 <input type="text" class="form-control" name="data[Name]" id="nameInput" value="" required>
@@ -186,17 +197,7 @@
                 </div>
             </div>
 
-            <div class="col-12">
-                <label for="interestInput" class="form-label">ความสนใจ</label>
-                <select class="form-select" aria-label=".form-select-sm" id="interestInput">
-                    <option value="1">สนใจสมัครขายประกันรถออนไลน์</option>
-                    <option value="2">สนใจซื้อประกันรถในราคาสมาชิก</option>
-                </select>
-                <div class="valid-feedback">
-                </div>
-                <div class="invalid-feedback">
-                </div>
-            </div>
+
             <div class="col-12">
                 <button class="btn btn-primary" type="submit">ส่งข้อมูล</button>
             </div>
@@ -220,8 +221,8 @@
         </div>
         <div class="row" style="background-color:transparent;z-index:98;" id="chat">
             <a class="float-items align-items-middle">
-                <img src="./icon/chat.png" width="100%" alt="Chat">
-                <img class="d-none" src="./icon/cancel.png" width="100%" alt="Cancel">
+                <img class="d-none" src="./icon/chat.png" width="100%" alt="Chat">
+                <img src="./icon/cancel.png" width="100%" alt="Cancel">
             </a>
         </div>
 
