@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ตอบแบบสอบถาม</title>
+
+    <!-- icon -->
+    <link rel="icon" href="./icon/icon.jpg" type="image/x-icon" />
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -86,33 +90,37 @@
     <div class="container-sm mt-3 mb-3">
         <div class="row ">
             <div class="col-md-12 text-center">
-                <img src="https://images.unsplash.com/photo-1670968981833-e028025124a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=391&q=80"
-                    alt="" srcset="">
+                <img src="./img/img1.jpg" alt="" srcset="">
             </div>
-
             <div class="col-md-12 text-center">
-                <img src="https://www.w3schools.com/bootstrap4/img_avatar1.png" class="rounded-circle"
-                    alt="Cinque Terre" width="304" height="236">
+                <img src="./img/img2.jpg" alt="" srcset="">
             </div>
-
             <div class="col-md-12 text-center">
-                <img src="https://images.unsplash.com/photo-1671030970314-1bb6e34d8dc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                    alt="" srcset="">
+                <img src="./img/img3.jpg" alt="" srcset="">
             </div>
-
             <div class="col-md-12 text-center">
-                <img src="https://images.unsplash.com/photo-1670870897001-e6ef25886ca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
-                    srcset="">
+                <img src="./img/img4.jpg" alt="" srcset="">
             </div>
-
             <div class="col-md-12 text-center">
-                <img src="https://plus.unsplash.com/premium_photo-1669950187631-9c4776fae41a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
-                    srcset="">
+                <img src="./img/img5.jpg" alt="" srcset="">
             </div>
-
             <div class="col-md-12 text-center">
-                <img src="https://images.unsplash.com/photo-1670979313867-1ca5b1657b35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
-                    srcset="">
+                <img src="./img/img6.jpg" alt="" srcset="">
+            </div>
+            <div class="col-md-12 text-center">
+                <img src="./img/img7.jpg" alt="" srcset="">
+            </div>
+            <div class="col-md-12 text-center">
+                <img src="./img/img8.jpg" alt="" srcset="">
+            </div>
+            <div class="col-md-12 text-center">
+                <img src="./img/img9.jpg" alt="" srcset="">
+            </div>
+            <div class="col-md-12 text-center">
+                <img src="./img/img10.jpg" alt="" srcset="">
+            </div>
+            <div class="col-md-12 text-center">
+                <img src="./img/img11.jpg" alt="" srcset="">
             </div>
         </div>
 
@@ -132,6 +140,14 @@
         <div class="display-6">
             ลงทะเบียนให้เราติดต่อกลับ
         </div>
+        <!-- profile picture-->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="./icon/icon.jpg" alt="" style="border-radius: 50%;" width="200px" height="200px">
+            </div>
+        </div>
+
+
         <form class="row g-3 needs-validation" action="https://sheetdb.io/api/v1/wosq6sq5g5zm4" method="POST" id="form"
             novalidate>
             <div class="col-md-12">
@@ -167,12 +183,13 @@
 
             <div class="col-md-12">
                 <label for="interestInput" class="form-label">ความสนใจ</label>
-                <input type="text" class="form-control" name="data[Interest]" id="interestInput" value="" required>
+                <select class="form-select" aria-label=".form-select-sm" id="interestInput">
+                    <option value="1">สนใจสมัครขายประกันรถออนไลน์</option>
+                    <option value="2">สนใจซื้อประกันรถในราคาสมาชิก</option>
+                </select>
                 <div class="valid-feedback">
-
                 </div>
                 <div class="invalid-feedback">
-                    Please choose a username.
                 </div>
             </div>
             <div class="col-12">
@@ -209,112 +226,6 @@
     </div>
 </body>
 
-<script>
-
-    $(document).ready(function () {
-
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll('.needs-validation')
-
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms)
-            .forEach(function (form) {
-                form.addEventListener('submit', function (event) {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-
-                    form.classList.add('was-validated')
-                }, false)
-            })
-
-        var form = document.getElementById('form');
-        form.addEventListener("submit", e => {
-            e.preventDefault();
-            // fetch(form.action, {
-            //     method: "POST",
-            //     body: new FormData(document.getElementById("form")),
-            // }).then(
-            //     response => response.json()
-            // ).then((html) => {
-            //     // you can put any JS code here
-            //     alert('ส่งข้อมูลสำเร็จ')
-            // });
-
-            //post to /push
-            fetch('/push', {
-                method: "POST",
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    "name": document.getElementById("nameInput").value,
-                    "phone": document.getElementById("phoneInput").value,
-                    "lineId": document.getElementById("lineIdInput").value,
-                    "interest": document.getElementById("interestInput").value,
-                })
-            })
-                .then(
-                    response => response.json()
-                ).then((html) => {
-                    // you can put any JS code here
-                    alert('ส่งข้อมูลสำเร็จ')
-                }
-                )
-
-        });
-
-
-
-        $("#line").slideToggle();
-        $("#line").click(function () {
-            window.open("https://line.me/ti/p/XXX", "_blank");
-        });
-
-        $("#facebook").slideToggle();
-        $("#facebook").click(function () {
-            window.open("https://facebook.com", "_blank");
-        });
-
-        $("#phone").slideToggle();
-        $("#phone").click(function () {
-            window.open("tel:0999999999", "_blank");
-        });
-
-        $("#chat").click(function () {
-            $("#chat").find("img").toggleClass("d-none");
-
-            $("#line").slideToggle();
-            $("#facebook").slideToggle();
-            $("#phone").slideToggle();
-        });
-
-        $("#button").click(function () {
-            $('html, body').animate({
-                scrollTop: $("#form").offset().top
-            }, 1000);
-        });
-
-        //hide button when form is shown
-        $(window).scroll(function () {
-            var threshold = $("#form").height() - 100; // number of pixels before bottom of page that you want to start fading
-            var op = (($(document).height() - $(window).height()) - $(window).scrollTop()) / threshold;
-            if (op <= 1) {
-                $("#button").hide('slide', { direction: 'down' }, 500)
-
-            } else {
-                $("#button").show('slide', { direction: 'down' }, 500)
-            }
-
-        });
-    });
-
-</script>
-
-<!-- <script src="../Frontend/script.js"></script>
-<script src="../Frontend/jqScript.js"></script> -->
+<script src="./script.js"></script>
 
 </html>

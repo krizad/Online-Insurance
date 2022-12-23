@@ -48,7 +48,7 @@ app.post('/push', async (req, res) => {
             text: "ชื่อ: " + name + "\n" +
                 "เบอร์โทร: " + phone + "\n" +
                 "ไลน์ไอดี: " + lineId + "\n" +
-                "สนใจ: " + interest
+                "ความสนใจ: " + interest
         };
 
 
