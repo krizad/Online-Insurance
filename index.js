@@ -52,7 +52,7 @@ app.post('/push', async (req, res) => {
         };
 
 
-        const result = await client.pushMessage('U50f2726d03fb8e8b0f6b424eaaf0bf54', message);
+        const result = await client.pushMessage('U3bc2ec800c39788fbe563e99fb5a79f8', message);
         return res.status(200).send(result);
     } catch (error) {
         console.log(error);
