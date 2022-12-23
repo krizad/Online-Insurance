@@ -64,7 +64,7 @@
 
     .float {
         position: fixed;
-        bottom: 20px;
+        bottom: 10px;
         right: 40px;
 
     }
@@ -87,7 +87,7 @@
 </style>
 
 <body>
-    <div class="container-sm mt-3 mb-3">
+    <div class="container-sm mt-3" style="margin-bottom: 60px;">
         <div class="row">
             <div class="col-12 text-center">
                 <img src="./img/img1.jpg" alt="" srcset="" style="width: 100%;">
@@ -146,8 +146,8 @@
         </div>
 
 
-        <form class="row g-3 needs-validation" action="https://sheetdb.io/api/v1/wosq6sq5g5zm4" method="POST" id="form"
-            novalidate>
+        <form class="row g-3 needs-validation" action="https://sheetdb.io/api/v1/wosq6sq5g5zm4" method="POST"
+            id="form" novalidate>
             <div class="col-12">
                 <label for="nameInput" class="form-label">ชื่อ-นามสกุล<span class="text-danger">*</span></label>
                 <input type="text" class="form-control" name="data[Name]" id="nameInput" value="" required>
@@ -194,32 +194,30 @@
                 <button class="btn btn-primary" type="submit">ส่งข้อมูล</button>
             </div>
         </form>
-
-        <div class="float">
-            <div class="row" style="background-color:transparent;z-index: 100;" id="line">
-                <a href="#" class="float-items">
-                    <img src="./icon/line.png" width="60px" alt="Line">
-                </a>
-            </div>
-            <div class="row" style="background-color:transparent;z-index:99;" id="facebook">
-                <a href="#" class="float-items">
-                    <img src="./icon/facebook.png" width="60px" alt="Facebook">
-                </a>
-            </div>
-            <div class="row" style="background-color:transparent;z-index:99;" id="phone">
-                <a href="#" class="float-items">
-                    <img src="./icon/phone.png" width="60px" alt="Phone">
-                </a>
-            </div>
-            <div class="row" style="background-color:transparent;z-index:98;" id="chat">
-                <a class="float-items align-items-middle">
-                    <img src="./icon/chat.png" width="100%" alt="Chat">
-                    <img class="d-none" src="./icon/cancel.png" width="100%" alt="Cancel">
-                </a>
-            </div>
-
-
+    </div>
+    <div class="float">
+        <div class="row" style="background-color:transparent;z-index: 100;" id="line">
+            <a href="#" class="float-items">
+                <img src="./icon/line.png" width="60px" alt="Line">
+            </a>
         </div>
+        <div class="row" style="background-color:transparent;z-index:99;" id="facebook">
+            <a href="#" class="float-items">
+                <img src="./icon/facebook.png" width="60px" alt="Facebook">
+            </a>
+        </div>
+        <div class="row" style="background-color:transparent;z-index:99;" id="phone">
+            <a href="#" class="float-items">
+                <img src="./icon/phone.png" width="60px" alt="Phone">
+            </a>
+        </div>
+        <div class="row" style="background-color:transparent;z-index:98;" id="chat">
+            <a class="float-items align-items-middle">
+                <img src="./icon/chat.png" width="100%" alt="Chat">
+                <img class="d-none" src="./icon/cancel.png" width="100%" alt="Cancel">
+            </a>
+        </div>
+
 
     </div>
 </body>
